@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+:root {
+  --neutral-100:#FFFFFF;
+  --neutral-200:#D4D3D9;
+  --neutral-300:#ACACB7;
+  --neutral-600:#3C3B5E;
+  --neutral-700:#302F4A;
+  --neutral-800:#262540;
+  --neutral-900:#02012C;
+  --call-100: #FF820A;
+  --blue-100:#4658D9;
+  --blue-200:#2b1b9c;
+  --family:  "DM Sans", sans-serif;
+  --transition: all 0.3s ease-in-out;
+  --xxxl: 6rem;
+  --xxl: 3.25rem;
+  --xl:2rem;
+  --lg:1.75rem;
+  --md-20:1.25rem;
+  --md:1.125rem;
+  --regular:1rem;
+  --sm:0.875rem;
+}
+
+@theme inline {
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-call-100: var(--call-100);
+  --color-blue-100: var(--blue-100);
+  --color-blue-200: var(--blue-200);
+  --font-sans: var(--family);
+  --animation: var(--transition);
+  --text-xxxl: var(--xxxl);
+  --text-xxl: var(--xxl);
+  --text-xl: var(--xl);
+  --text-lg: var(--lg);
+  --text-md-20: var(--md-20);
+  --text-md: var(--md);
+  --text-regular: var(--regular);
+  --text-sm: var(--sm);
+}
+
+body {
+  font-family: var(--font-sans), sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @theme inline {
+    --animation: none !important;
+  }
+}
